@@ -60,29 +60,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <div class="w3-twothird">
     
       <div class="w3-container w3-card w3-dark-grey w3-margin-bottom">
-        <h2 class="w3-text-white w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Work Experience</h2>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Work')">Work Experience</button>
+            <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
+            <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
+          </div>
+          
+          <!-- Tab content -->
+          <div id="Work" class="tabcontent">
+            <h2 class="w3-text-white w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Work Experience</h2>
         <div class="w3-container">
-            <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-                <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-              </div>
-              
-              <!-- Tab content -->
-              <div id="London" class="tabcontent">
-                <h3>London</h3>
-                <p>London is the capital city of England.</p>
-              </div>
-              
-              <div id="Paris" class="tabcontent">
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-              
-              <div id="Tokyo" class="tabcontent">
-                <h3>Tokyo</h3>
-                <p>Tokyo is the capital of Japan.</p>
-              </div>
 
         
           <h5 class="w3-opacity"><b>Software Engineer Intern / Nationwide Insurance</b></h5>
@@ -104,33 +91,41 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <li>Product and development-designing circuit boards for new products.</li>
           <hr>
         </div>
-      </div>
-
-      <div class="w3-container w3-card w3-dark-grey">
-        <h2 class="w3-text-white w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Marietta College</b></h5>
-          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020-2023</h6>
-          <li>Computer Organization and Architecture</li>
-          <li>Penetration Testing</li>
-          <li>Principles of Database Management</li>
-          <li>Infrastructures & Networks</li>
-          <li>Operating Systems</li>
-          <li>Game Development</li>
-          <li>Mobile Application Development</li>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>The Ohio State University</b></h5>
-          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - 2020</h6>
-          <li>Transfered to Marietta College due to Covid-19</li>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Marietta High School</b></h5>
-          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2019</h6>
-          <p></p><br>
-        </div>
+          </div>
+          
+          <div id="Projects" class="tabcontent">
+            <div class="w3-container w3-card w3-dark-grey">
+                <h2 class="w3-text-white w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Education</h2>
+                <div class="w3-container">
+                  <h5 class="w3-opacity"><b>Marietta College</b></h5>
+                  <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020-2023</h6>
+                  <li>Computer Organization and Architecture</li>
+                  <li>Penetration Testing</li>
+                  <li>Principles of Database Management</li>
+                  <li>Infrastructures & Networks</li>
+                  <li>Operating Systems</li>
+                  <li>Game Development</li>
+                  <li>Mobile Application Development</li>
+                  <hr>
+                </div>
+                <div class="w3-container">
+                  <h5 class="w3-opacity"><b>The Ohio State University</b></h5>
+                  <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - 2020</h6>
+                  <li>Transfered to Marietta College due to Covid-19</li>
+                  <hr>
+                </div>
+                <div class="w3-container">
+                  <h5 class="w3-opacity"><b>Marietta High School</b></h5>
+                  <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2019</h6>
+                  <p></p><br>
+                </div>
+              </div>
+          </div>
+          
+          <div id="Education" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
       </div>
 
     <!-- End Right Column -->
