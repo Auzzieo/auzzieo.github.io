@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="tabs.css">
+<script src="tabs.js"></script>
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
@@ -60,6 +62,29 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       <div class="w3-container w3-card w3-dark-grey w3-margin-bottom">
         <h2 class="w3-text-white w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Work Experience</h2>
         <div class="w3-container">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+              </div>
+              
+              <!-- Tab content -->
+              <div id="London" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+              </div>
+              
+              <div id="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+              </div>
+              
+              <div id="Tokyo" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+              </div>
+
+        
           <h5 class="w3-opacity"><b>Software Engineer Intern / Nationwide Insurance</b></h5>
           <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2022 - <span class="w3-tag w3-blue-grey w3-round">Current</span></h6>
           <li>Created Nest (Developer Search Page) - Python, Flask, AWS Elasticsearch</li>
@@ -122,7 +147,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <i class="fa fa-instagram w3-hover-opacity"></i>
   <i class="fa fa-snapchat w3-hover-opacity"></i>
   <a href="https://www.linkedin.com/in/austinoffenberger/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
 </body>
