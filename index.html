@@ -61,7 +61,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     
       <div class="w3-container w3-card w3-dark-grey w3-margin-bottom">
         <div class="tab w3-container w3-blue-grey w3-center w3-margin-top">
-            <button class="tablinks" onclick="openCity(event, 'Work')">Work Experience</button>
+            <button class="tablinks" onclick="openCity(event, 'Work')" id="defaultOpen">Work Experience</button>
             <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
             <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
           </div>
@@ -145,4 +145,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </footer>
 
 </body>
+
+<script>
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+    
+
 </html>
