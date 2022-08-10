@@ -1,155 +1,147 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Austin Offenberger</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="tabs.css">
-<script src="tabs.js"></script>
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
-</head>
-<body style="background-color: darkslategray;">
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-dark-grey w3-text-white w3-card-4">
-        <div class="w3-display-container">
-          <img src="download.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2 class="w3-text-white">Austin Offenberger</h2>
-          </div>
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>Software Engineer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>Marietta, OH</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>austin@kaslodesign.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>740-516-2126</p>
-          <hr>
-
-          <p class="w3-large"><b><i class="fa fa-code fa-fw w3-margin-right w3-text-blue-grey"></i>Programming Languages</b></p>
-          <li>Python</li>
-          <li>C</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-desktop fa-fw w3-margin-right w3-text-blue-grey"></i>Software</b></p>
-          <li>Docker</li>
-          <li>Kubernetes</li>
-          <li>Concourse</li>
-          <br>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-dark-grey w3-margin-bottom">
-        <div class="tab w3-container w3-blue-grey w3-center w3-margin-top">
-            <button class="tablinks" onclick="openCity(event, 'Work')" id="defaultOpen">Work Experience</button>
-            <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
-            <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
-          </div>
-          
-          <!-- Tab content -->
-          <div id="Work" class="tabcontent">
-            <h2 class="w3-text-white w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Work Experience</h2>
-        <div class="w3-container">
-
-        
-          <h5 class="w3-opacity"><b>Software Engineer Intern / Nationwide Insurance</b></h5>
-          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2022 - <span class="w3-tag w3-blue-grey w3-round">Current</span></h6>
-          <li>Created Nest (Developer Search Page) - Python, Flask, AWS Elasticsearch</li>
-          <li>Created Kubernetes CronJob to crawl GitHub wikis and index them into Elasticsearch daily for Nest</li>
-          <li>Deployed Nest to cloud using Docker and Kubernetes</li>
-          <li>Bug fixes to existing Concourse pipelines</li>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Computer Science Intern / Grimm Scientific</b></h5>
-          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2020 - May 2022</h6>
-          <li>Developed C code for CRYOTherm hydrotherapy systems utilizing PIC microcontrollers.</li>
-          <li>Developed C code for ReadyRef personal timers utilizing AVR microcontrollers.</li>
-          <li>Redesigned and developed C code for CRYOPress sequential cryo-compression systems utilizing PIC microcontrollers.</li>
-          <li>Flowcharting operations of company products.</li>
-          <li>Routine bug fixes to the company database using Visual Basic .NET.</li>
-          <li>Product and development-designing circuit boards for new products.</li>
-          <hr>
-        </div>
-          </div>
-          
-          <div id="Education" class="tabcontent">
-            <div class="w3-container w3-card w3-dark-grey">
-                <h2 class="w3-text-white w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Education</h2>
-                <div class="w3-container">
-                  <h5 class="w3-opacity"><b>Marietta College</b></h5>
-                  <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020-2023</h6>
-                  <li>Computer Organization and Architecture</li>
-                  <li>Penetration Testing</li>
-                  <li>Principles of Database Management</li>
-                  <li>Infrastructures & Networks</li>
-                  <li>Operating Systems</li>
-                  <li>Game Development</li>
-                  <li>Mobile Application Development</li>
-                  <hr>
+    <head>
+        <title>Austin Offenberger</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="tabs.css">
+        <script src="tabs.js"></script>
+        <style>
+            html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+        </style>
+    </head>
+    <body style="background-color: darkslategray;">
+        <!-- Page Container -->
+        <div class="w3-content w3-margin-top" style="max-width:1400px;">
+            <!-- The Grid -->
+            <div class="w3-row-padding">
+                <!-- Left Column -->
+                <div class="w3-third">
+                    <div class="w3-dark-grey w3-text-white w3-card-4">
+                        <div class="w3-display-container">
+                            <img src="download.jpg" style="width:100%" alt="Avatar">
+                            <div class="w3-display-bottomleft w3-container w3-text-black">
+                                <h2 class="w3-text-white">Austin Offenberger</h2>
+                            </div>
+                        </div>
+                        <div class="w3-container">
+                            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>Software Engineer</p>
+                            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>Marietta, OH</p>
+                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>austin@kaslodesign.com</p>
+                            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>740-516-2126</p>
+                            <hr>
+                            <p class="w3-large"><b><i class="fa fa-code fa-fw w3-margin-right w3-text-blue-grey"></i>Programming Languages</b></p>
+                            <li>Python</li>
+                            <li>C</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <br>
+                            <p class="w3-large w3-text-theme"><b><i class="fa fa-desktop fa-fw w3-margin-right w3-text-blue-grey"></i>Software</b></p>
+                            <li>Docker</li>
+                            <li>Kubernetes</li>
+                            <li>Concourse</li>
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- End Left Column -->
                 </div>
-                <div class="w3-container">
-                  <h5 class="w3-opacity"><b>The Ohio State University</b></h5>
-                  <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - 2020</h6>
-                  <li>Transfered to Marietta College due to Covid-19</li>
-                  <hr>
+                <!-- Right Column -->
+                <div class="w3-twothird">
+                    <div class="tab w3-container w3-blue-grey w3-center w3-margin-top">
+                        <button class="tablinks w3-text-white" onclick="openCity(event, 'Work')" id="defaultOpen">Work Experience</button>
+                        <button class="tablinks w3-text-white" onclick="openCity(event, 'Education')">Education</button>
+                        <button class="tablinks w3-text-white" onclick="openCity(event, 'Projects')">Projects</button>
+                    </div>
+                    <!-- Tab content -->
+                    <div id="Work" class="tabcontent w3-container w3-card w3-dark-grey">
+                        <h2 class="w3-text-white w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Work Experience</h2>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Software Engineer Intern / Nationwide Insurance</b></h5>
+                            <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>May 2022 - <span class="w3-tag w3-blue-grey w3-round">Current</span></p>
+                            <li>Created Nest (Developer Search Page) - Python, Flask, AWS Elasticsearch</li>
+                            <li>Created Kubernetes CronJob to crawl GitHub wikis and index them into Elasticsearch daily for Nest</li>
+                            <li>Deployed Nest to cloud using Docker and Kubernetes</li>
+                            <li>Bug fixes to existing Concourse pipelines</li>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Computer Science Intern / Grimm Scientific</b></h5>
+                            <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>Apr 2020 - May 2022</p>
+                            <li>Developed C code for CRYOTherm hydrotherapy systems utilizing PIC microcontrollers.</li>
+                            <li>Developed C code for ReadyRef personal timers utilizing AVR microcontrollers.</li>
+                            <li>Redesigned and developed C code for CRYOPress sequential cryo-compression systems utilizing PIC microcontrollers.</li>
+                            <li>Flowcharting operations of company products.</li>
+                            <li>Routine bug fixes to the company database using Visual Basic .NET.</li>
+                            <li>Product and development-designing circuit boards for new products.</li>
+                            <hr>
+                        </div>
+                    </div>
+                    <div id="Education" class="tabcontent w3-container w3-card w3-dark-grey">
+                        <h2 class="w3-text-white w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Education</h2>
+                        <div class="w3-container" style="padding-left: 3em; text-indent:-1.5em;">
+                            <h5 class="w3-opacity"><b>Marietta College</b></h5>
+                            <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>2020 - 2023</p>
+                            <li>Computer Organization and Architecture</li>
+                            <li>Penetration Testing</li>
+                            <li>Principles of Database Management</li>
+                            <li>Infrastructures & Networks</li>
+                            <li>Operating Systems</li>
+                            <li>Game Development</li>
+                            <li>Mobile Application Development</li>
+                            <hr>
+                        </div>
+                        <div class="w3-container" style="padding-left: 3em; text-indent:-1.5em;">
+                            <h5 class="w3-opacity"><b>The Ohio State University</b></h5>
+                            <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>2019 - 2020</p>
+                            <li>Transfered to Marietta College due to Covid-19</li>
+                            <hr>
+                        </div>
+                        <div class="w3-container" style="padding-left: 3em; text-indent:-1.5em;">
+                            <h5 class="w3-opacity"><b>Marietta High School</b></h5>
+                            <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>2015 - 2019</p>                            
+                            <p></p>
+                            <br>
+                        </div>
+                    </div>
+                    <div id="Projects" class="tabcontent w3-container w3-card w3-dark-grey">
+                        <h2 class="w3-text-white w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Projects</h2>
+                        <div class="w3-container" style="padding-left: 3em; text-indent:-1.5em;">
+                            <h5 class="w3-opacity"><b>Nationwide E-Commerce Claims API</b></h5>
+                            <p><i class="fa fa-code fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>Language: Python</p>                            
+                            <p><i class="fa fa-desktop fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>Technologies: AWS Lambda, AWS Rekognition</p>                                         
+                            <li>Team Submission for Nationwide Hackathon (Placed 3rd)</li>
+                            <li>Allows user to input image along with information about a product</li>
+                            <li>Gets labels and text from image and combines with claim data to create a Google shopping search</li>
+                            <li>Returns the image, name, and price of possible replacement products as well as the estimated value of the claim</li>                            
+                            <hr>
+                        </div>
+                        <div class="w3-container" style="padding-left: 3em; text-indent:-1.5em;">
+                            <h5 class="w3-opacity"><b>Virtual Complex Instruction Set Computer</b></h5>
+                            <p><i class="fa fa-code fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>Language: C</p>                            
+                            <li>Executes hexadecimal machine code programs</li>
+                            <li>Capable of for/do/while loops, if/else/case statements, function calls & returns with reference/value parameters, dynamic data structures and algorithms</li>
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- End Right Column -->
                 </div>
-                <div class="w3-container">
-                  <h5 class="w3-opacity"><b>Marietta High School</b></h5>
-                  <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2019</h6>
-                  <p></p><br>
-                </div>
-              </div>
-          </div>
-          
-          <div id="Projects" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
-          </div>
-      </div>
-
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-  <!-- End Page Container -->
-</div>
-
-<footer class="w3-container w3-blue-grey w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <a href="https://www.linkedin.com/in/austinoffenberger/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-</footer>
-
-</body>
-
-<script>
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-</script>
-    
-
+                <!-- End Grid -->
+            </div>
+            <!-- End Page Container -->
+        </div>
+        <footer class="w3-container w3-blue-grey w3-center w3-margin-top">
+            <p>Find me on social media.</p>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <a href="https://www.linkedin.com/in/austinoffenberger/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </footer>
+    </body>
+    <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 </html>
