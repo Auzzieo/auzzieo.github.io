@@ -32,17 +32,29 @@
                             <p><i class="fa fa-home fa-fw w3-margin-right w3-large blue"></i>Marietta, OH</p>
                             <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large blue"></i>austin@kaslodesign.com</p>
                             <p><i class="fa fa-phone fa-fw w3-margin-right w3-large blue"></i>740-516-2126</p>
+                            <p><i class="fa fa-file fa-fw w3-margin-right w3-large blue"></i><a href="8_1_22 Austin Offenberger Resume (1).pdf" download>Resume</a></p>
                             <hr>
                             <p class="w3-large"><b><i class="fa fa-code fa-fw w3-margin-right blue"></i>Programming Languages</b></p>
                             <li>Python</li>
                             <li>C</li>
                             <li>HTML</li>
                             <li>CSS</li>
+                            <li>SQL</li>
                             <br>
                             <p class="w3-large w3-text-theme"><b><i class="fa fa-desktop fa-fw w3-margin-right blue"></i>Software</b></p>
-                            <li>Docker</li>
-                            <li>Kubernetes</li>
-                            <li>Concourse</li>
+                            <div class="w3-left w3-margin-bottom">
+                                <li>Linux</li>
+                                <li>Git</li>
+                                <li>Docker</li>
+                                <li>Kubernetes</li>
+                                <li>Concourse</li>
+                            </div>
+                            <div class="w3-right w3-margin-right">
+                                <li>Flask</li>
+                                <li>AWS Lambda</li>
+                                <li>Unity</li>
+                                <li>MS Office</li>
+                            </div>
                             <br>
                         </div>
                     </div>
@@ -61,7 +73,7 @@
                         <h2 class="white w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge blue"></i>Work Experience</h2>
                         <div class="w3-container">
                             <h5 class="w3-opacity"><b>Software Engineer Intern / Nationwide Insurance</b></h5>
-                            <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large blue"></i>May 2022 - <span class="w3-tag blue-back w3-round">Current</span></p>
+                            <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large blue"></i>May 2022 - <span class="w3-tag blue-back grey w3-round">Current</span></p>
                             <li>Created Nest (Developer Search Page) - Python, Flask, AWS Elasticsearch</li>
                             <li>Created Kubernetes CronJob to crawl GitHub wikis and index them into Elasticsearch daily for Nest</li>
                             <li>Deployed Nest to cloud using Docker and Kubernetes</li>
@@ -82,9 +94,9 @@
                     </div>
                     <div id="Education" class="tabcontent w3-container w3-card white grey-back">
                         <h2 class="white w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge blue"></i>Education</h2>
-                        <div class="w3-container" style="padding-left: 3em; text-indent:-1.5em;">
-                            <h5 class="w3-opacity"><b>Marietta College</b></h5>
-                            <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large blue"></i>2020 - 2023</p>
+                        <div class="w3-container">
+                            <h5 class="w3-opacity"><b>Marietta College / B.S. Computer Science</b></h5>
+                            <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large blue"></i>2020 - <span class="w3-tag blue-back grey w3-round">2023</span></p>
                             <li>Computer Organization and Architecture</li>
                             <li>Penetration Testing</li>
                             <li>Principles of Database Management</li>
@@ -94,13 +106,13 @@
                             <li>Mobile Application Development</li>
                             <hr>
                         </div>
-                        <div class="w3-container" style="padding-left: 3em; text-indent:-1.5em;">
+                        <div class="w3-container">
                             <h5 class="w3-opacity"><b>The Ohio State University</b></h5>
                             <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large blue"></i>2019 - 2020</p>
                             <li>Transfered to Marietta College due to Covid-19</li>
                             <hr>
                         </div>
-                        <div class="w3-container" style="padding-left: 3em; text-indent:-1.5em;">
+                        <div class="w3-container">
                             <h5 class="w3-opacity"><b>Marietta High School</b></h5>
                             <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large blue"></i>2015 - 2019</p>                            
                             <p></p>
@@ -126,6 +138,22 @@
                             <li>Capable of for/do/while loops, if/else/case statements, function calls & returns with reference/value parameters, dynamic data structures and algorithms</li>
                             <hr>
                         </div>
+                        <div class="w3-center w3-padding-16 navButton">
+                            <button class="tablinks blue-back grey" onclick="openCity(event, 'Projects2')">Next Page</button>
+                        </div>
+                    </div>
+                    <div id="Projects2" class="tabcontent w3-container w3-card white grey-back">
+                        <h2 class="white w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge blue"></i>Projects</h2>
+                        <div class="w3-container" style="padding-left: 3em; text-indent:-1.5em;">
+                            <h5 class="w3-opacity"><b>Gas Price Mobile Application</b></h5>
+                            <p><i class="fa fa-code fa-fw w3-margin-right w3-large blue"></i>Language: Dart, Flutter</p>                            
+                            <li>Mobile application that displays current gas prices for each US state</li>
+                            <li>Allows user to search for major cities in a state by using the two letter state codes</li>
+                            <hr>
+                        </div>
+                        <div class="w3-center w3-padding-16 navButton">
+                            <button class="tablinks blue-back grey" onclick="openCity(event, 'Projects')">Previous Page </button>
+                        </div>
                     </div>
                     <!-- End Right Column -->
                 </div>
@@ -138,6 +166,7 @@
             <i class="fa fa-instagram w3-hover-opacity"></i>
             <i class="fa fa-snapchat w3-hover-opacity"></i>
             <a href="https://www.linkedin.com/in/austinoffenberger/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <p>Created by Austin Offenberger</p>
         </footer>
     </body>
     <script>
