@@ -64,9 +64,9 @@
                 <!-- Right Column -->
                 <div class="w3-twothird">
                     <div class="tab w3-container blue-back w3-center w3-margin-top">
-                        <button class="tablinks white" onclick="openCity(event, 'Work')" id="defaultOpen">Work Experience</button>
-                        <button class="tablinks white" onclick="openCity(event, 'Education')">Education</button>
-                        <button class="tablinks white" onclick="openCity(event, 'Projects')">Projects</button>
+                        <button class="tablinks white" onclick="openTab(event, 'Work')" id="defaultOpen">Work Experience</button>
+                        <button class="tablinks white" onclick="openTab(event, 'Education')">Education</button>
+                        <button class="tablinks white" onclick="openTab(event, 'Projects')">Projects</button>
                     </div>
                     <!-- Tab content -->
                     <div id="Work" class="tabcontent w3-container w3-card white grey-back">
@@ -99,6 +99,16 @@
                             <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large blue"></i>2020 - <span class="w3-tag blue-back grey w3-round">2023</span></p>
                             <div class="w3-left">
                                 <ul>
+                                    <li>Relevant Coursework: </li>
+                                    <ul>
+                                        <li>Computer Organization and Architecture</li>
+                                        <li>Penetration Testing</li>
+                                        <li>Principles of Database Management</li>
+                                        <li>Infrastructures & Networks</li>
+                                    </ul>
+                                </ul>
+                                <br>
+                                <ul>
                                     <li>Involvement: </li>
                                     <ul>
                                         <li>Varsity Rocket League (Captain)</li>
@@ -107,13 +117,9 @@
                                 </ul>
                             </div>
                             <div class="w3-right w3-margin-right">
+                                <br>
                                 <ul>
-                                    <li>Relevant Coursework: </li>
                                     <ul>
-                                        <li>Computer Organization and Architecture</li>
-                                        <li>Penetration Testing</li>
-                                        <li>Principles of Database Management</li>
-                                        <li>Infrastructures & Networks</li>
                                         <li>Operating Systems</li>
                                         <li>Game Development</li>
                                         <li>Mobile Application Development</li>
@@ -174,7 +180,7 @@
                             <hr>
                         </div>
                         <div class="w3-center w3-padding-16 navButton">
-                            <button class="tablinks blue-back grey" onclick="openCity(event, 'Projects2')">Next Page</button>
+                            <button class="tablinks blue-back grey" onclick="openTab(event, 'Projects2')">Next Page</button>
                         </div>
                     </div>
                     <div id="Projects2" class="tabcontent w3-container w3-card white grey-back">
@@ -187,7 +193,7 @@
                             <hr>
                         </div>
                         <div class="w3-center w3-padding-16 navButton">
-                            <button class="tablinks blue-back grey" onclick="openCity(event, 'Projects')">Previous Page </button>
+                            <button class="tablinks blue-back grey" onclick="openTab(event, 'Projects')">Previous Page </button>
                         </div>
                     </div>
                     <!-- End Right Column -->
@@ -198,8 +204,8 @@
         </div>
         <footer class="w3-container blue-back w3-center w3-margin-top">
             <p>Find me on social media.</p>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <!--i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i-->
             <a href="https://www.linkedin.com/in/austinoffenberger/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
             <p>Created by Austin Offenberger</p>
         </footer>
