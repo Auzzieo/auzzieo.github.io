@@ -1,3 +1,5 @@
+var myVar;
+
 function openTab(evt, tabName) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -18,3 +20,13 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+
+function myFunction() {
+  myVar = setTimeout(showPage, 2000);
+}
+            
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+  document.getElementById("defaultOpen").click();
+}

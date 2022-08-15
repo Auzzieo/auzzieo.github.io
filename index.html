@@ -10,241 +10,274 @@
         <link rel="stylesheet" href="page.css">
         <script src="tabs.js"></script>
         <style>
-            html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+            html,body,h1,h2,h3,h4,h5,h6 {font-family: "open sans", sans-serif}
         </style>
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
     </head>
-    <body class="black">
-        <!-- Page Container -->
-        <div class="w3-content w3-margin-top" style="max-width:1400px;">
-            <!-- The Grid -->
-            <div class="w3-row-padding">
-                <!-- Left Column -->
-                <div class="w3-third">
-                    <div class="grey-back white w3-card-4">
-                        <div class="w3-display-container">
-                            <img src="download.jpg" style="width:100%" alt="Avatar">
-                            <div class="w3-display-bottomleft w3-container w3-text-black">
-                                <h2 class="white">Austin Offenberger</h2>
+    <body class="black" onload="myFunction()">
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+            <!-- Page Container -->
+            <div class="w3-content w3-margin-top" style="max-width:1400px;">
+                <!-- The Grid -->
+                <div class="w3-row-padding">
+                    <!-- Left Column -->
+                    <div class="w3-third">
+                        <div class="grey-back white w3-card-4">
+                            <div class="w3-display-container">
+                                <img src="download.jpg" style="width:100%" alt="Avatar">
+                                <div class="w3-display-bottomleft w3-container w3-text-black">
+                                    <h2 class="name w3-card">Austin Offenberger</h2>
+                                </div>
                             </div>
-                        </div>
-                        <div class="w3-container">
-                            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large blue"></i>Software Engineer</p>
-                            <p><i class="fa fa-home fa-fw w3-margin-right w3-large blue"></i>Marietta, OH</p>
-                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large blue"></i><a href="mailto: austin@kaslodesign.com">austin@kaslodesign.com</a></p>
-                            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large blue"></i>740-516-2126</p>
-                            <p><i class="fa fa-file fa-fw w3-margin-right w3-large blue"></i><a href="8_1_22 Austin Offenberger Resume (1).pdf" download>Resume</a></p>
-                            <hr>
-                            <p class="w3-large"><b><i class="fa fa-code fa-fw w3-margin-right blue"></i>Programming Languages</b></p>
-                            <div class="w3-left w3-margin-bottom">
-                                <ul>
-                                    <li>Python</li>
-                                    <li>C</li>
-                                    <li>SQL</li>
-                                </ul>
-                            </div>
-                            <div class="w3-right" style="margin-right: 64px;">
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
-                            </div>
-                            <br><br><br><br><br>
-                            <p class="w3-large w3-text-theme"><b><i class="fa fa-desktop fa-fw w3-margin-right blue"></i>Software</b></p>
-                            <div class="w3-left w3-margin-bottom">
-                                <ul>
-                                    <li>Linux</li>
-                                    <li>Git</li>
-                                    <li>Docker</li>
-                                    <li>Kubernetes</li>
-                                    <li>Concourse</li>
-                                </ul>
-                            </div>
-                            <div class="w3-right w3-margin-right">
-                                <ul>
-                                    <li>Flask</li>
-                                    <li>AWS Lambda</li>
-                                    <li>Unity</li>
-                                    <li>MS Office</li>
-                                </ul>
-                            </div>
-                            <br>
-                        </div>
-                    </div>
-                    <br>
-                    <!-- End Left Column -->
-                </div>
-                <!-- Right Column -->
-                <div class="w3-twothird">
-                    <div class="tab w3-container blue-back w3-center w3-margin-top">
-                        <button class="tablinks white" onclick="openTab(event, 'Work')" id="defaultOpen">Work Experience</button>
-                        <button class="tablinks white" onclick="openTab(event, 'Education')">Education</button>
-                        <button class="tablinks white" onclick="openTab(event, 'Projects')">Projects</button>
-                    </div>
-                    <!-- Tab content -->
-                    <div id="Work" class="tabcontent w3-container w3-card white grey-back">
-                        <h2 class="white w3-padding-16"><i class="fa fa-briefcase fa-fw w3-margin-right w3-xxlarge blue"></i>Work Experience</h2>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Software Engineer Intern / Nationwide Insurance</b></h5>
-                            <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large blue"></i>May 2022 - <span class="w3-tag blue-back grey w3-round">Current</span></p>
-                            <ul>
-                                <li>Created Nest (Developer Search Page) - Python, Flask, AWS Elasticsearch</li>
-                                <li>Created Kubernetes CronJob to crawl GitHub wikis and index them into Elasticsearch daily for Nest</li>
-                                <li>Deployed Nest to cloud using Docker and Kubernetes</li>
-                                <li>Bug fixes to existing Concourse pipelines</li>
-                            </ul>
-                            <hr>
-                        </div>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Computer Science Intern / Grimm Scientific</b></h5>
-                            <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large blue"></i>Apr 2020 - May 2022</p>
-                            <ul>
-                                <li>Developed C code for CRYOTherm hydrotherapy systems utilizing PIC microcontrollers.</li>
-                                <li>Developed C code for ReadyRef personal timers utilizing AVR microcontrollers.</li>
-                                <li>Redesigned and developed C code for CRYOPress sequential cryo-compression systems utilizing PIC microcontrollers.</li>
-                                <li>Flowcharting operations of company products.</li>
-                                <li>Routine bug fixes to the company database using Visual Basic .NET.</li>
-                                <li>Product and development-designing circuit boards for new products.</li>
-                            </ul>
-                            <hr>
-                        </div>
-                    </div>
-                    <div id="Education" class="tabcontent w3-container w3-card white grey-back">
-                        <h2 class="white w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge blue"></i>Education</h2>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Marietta College / B.S. Computer Science</b></h5>
-                            <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large blue"></i>2020 - <span class="w3-tag blue-back grey w3-round">2023</span></p>
-                            <div class="w3-left">
-                                <ul>
-                                    <li>Relevant Coursework: </li>
+                            <div class="w3-container">
+                                <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large blue"></i>Software Engineer</p>
+                                <p><i class="fa fa-home fa-fw w3-margin-right w3-large blue"></i>Marietta, OH</p>
+                                <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large blue"></i><a href="mailto: austin@kaslodesign.com">austin@kaslodesign.com</a></p>
+                                <p><i class="fa fa-phone fa-fw w3-margin-right w3-large blue"></i>740-516-2126</p>
+                                <p><i class="fa fa-file fa-fw w3-margin-right w3-large blue"></i><a href="8_1_22 Austin Offenberger Resume (1).pdf" download>Resume</a></p>
+                                <hr>
+                                <p class="w3-large"><b><i class="fa fa-code fa-fw w3-margin-right blue"></i>Programming Languages</b></p>
+                                <div class="w3-left w3-margin-bottom">
                                     <ul>
-                                        <li>Computer Organization and Architecture</li>
-                                        <li>Penetration Testing</li>
-                                        <li>Principles of Database Management</li>
-                                        <li>Network Infrastructure & Architecture</li>
+                                        <li>Python</li>
+                                        <li>C</li>
+                                        <li>SQL</li>
                                     </ul>
-                                </ul>
-                            </div>
-                            <div class="w3-right w3-margin-right">
+                                </div>
+                                <div class="w3-right" style="margin-right: 64px;">
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                    </ul>
+                                </div>
+                                <br><br><br><br>
+                                <hr>
+                                <p class="w3-large w3-text-theme"><b><i class="fa fa-desktop fa-fw w3-margin-right blue"></i>Software</b></p>
+                                <div class="w3-left w3-margin-bottom">
+                                    <ul>
+                                        <li>Linux</li>
+                                        <li>Git</li>
+                                        <li>Docker</li>
+                                        <li>Kubernetes</li>
+                                        <li>Concourse</li>
+                                    </ul>
+                                </div>
+                                <div class="w3-right w3-margin-right">
+                                    <ul>
+                                        <li>Flask</li>
+                                        <li>AWS Lambda</li>
+                                        <li>Unity</li>
+                                    </ul>
+                                </div>
                                 <br>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- End Left Column -->
+                    </div>
+                    <!-- Right Column -->
+                    <div class="w3-twothird">
+                        <div class="tab w3-container blue-back w3-center w3-margin-top">
+                            <button class="tablinks white" onclick="openTab(event, 'Bio')" >About Me</button>
+                            <button class="tablinks white" onclick="openTab(event, 'Work')" id="defaultOpen">Work Experience</button>
+                            <button class="tablinks white" onclick="openTab(event, 'Education')">Education</button>
+                            <button class="tablinks white" onclick="openTab(event, 'Projects')">Projects</button>
+                            <button class="tablinks white" onclick="openTab(event, 'Awards')">Awards</button>
+                        </div>
+                        <!-- Tab content -->
+                        <div id="Bio" class="tabcontent w3-container w3-card white grey-back">
+                            <h2 class="white w3-padding-16"><i class="fa fa-briefcase fa-fw w3-margin-right w3-xxlarge blue"></i>About Me</h2>
+                            <div class="w3-container">
+                                Under Construction
+                            </div>
+                            <hr>
+                        </div>
+                        <div id="Work" class="tabcontent w3-container w3-card white grey-back">
+                            <h2 class="white w3-padding-16"><i class="fa fa-briefcase fa-fw w3-margin-right w3-xxlarge blue"></i>Work Experience</h2>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Software Engineer Intern / Nationwide Insurance</b></h5>
+                                <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large blue"></i>May 2022 - <span class="w3-tag blue-back grey w3-round">Current</span></p>
+                                <p><i class="fa fa-code fa-fw w3-margin-right w3-large blue"></i>Languages: Python, HTML, CSS</p>
+                                <p><i class="fa fa-desktop fa-fw w3-margin-right w3-large blue"></i>Technologies: Git, Docker, Kubernetes, Concourse, Flask</p>
                                 <ul>
+                                    <li>Created Nest (Developer Search Page) - Python, Flask, AWS Elasticsearch</li>
+                                    <li>Created Kubernetes CronJob to crawl GitHub wikis and index them into Elasticsearch daily for Nest</li>
+                                    <li>Deployed Nest to cloud using Docker and Kubernetes</li>
+                                    <li>Bug fixes to existing Concourse pipelines</li>
+                                </ul>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Computer Science Intern / Grimm Scientific</b></h5>
+                                <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large blue"></i>Apr 2020 - May 2022</p>
+                                <p><i class="fa fa-code fa-fw w3-margin-right w3-large blue"></i>Language: C</p>
+                                <p><i class="fa fa-desktop fa-fw w3-margin-right w3-large blue"></i>Technologies: Microchip PIC, Atmel AVR</p>
+                                <ul>
+                                    <li>Developed C code for CRYOTherm hydrotherapy systems utilizing PIC microcontrollers.</li>
+                                    <li>Developed C code for ReadyRef personal timers utilizing AVR microcontrollers.</li>
+                                    <li>Redesigned and developed C code for CRYOPress sequential cryo-compression systems utilizing PIC microcontrollers.</li>
+                                    <li>Flowcharting operations of company products.</li>
+                                    <li>Routine bug fixes to the company database using Visual Basic .NET.</li>
+                                    <li>Product and development-designing circuit boards for new products.</li>
+                                </ul>
+                                <hr>
+                            </div>
+                        </div>
+                        <div id="Education" class="tabcontent w3-container w3-card white grey-back">
+                            <h2 class="white w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge blue"></i>Education</h2>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Marietta College / B.S. Computer Science</b></h5>
+                                <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large blue"></i>2020 - <span class="w3-tag blue-back grey w3-round">2023</span></p>
+                                <div class="w3-left">
                                     <ul>
-                                        <li>Operating Systems</li>
-                                        <li>Game Development</li>
-                                        <li>Mobile Application Development</li>
-                                        <li>Discrete Mathematics</li>
+                                        <li>Relevant Coursework: </li>
+                                        <ul>
+                                            <li>Computer Organization and Architecture</li>
+                                            <li>Penetration Testing</li>
+                                            <li>Principles of Database Management</li>
+                                            <li>Network Infrastructure & Architecture</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div class="w3-right w3-margin-right">
+                                    <br>
+                                    <ul>
+                                        <ul>
+                                            <li>Operating Systems</li>
+                                            <li>Game Development</li>
+                                            <li>Mobile Application Development</li>
+                                            <li>Discrete Mathematics</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div class="w3-left">
+                                    <ul>
+                                        <li>Registered Courses: </li>
+                                        <ul>
+                                            <li>Data Structure & Algorithm Analysis</li>
+                                            <li>Portable Software</li>
+                                            <li>Software Engineering</li>
+                                            <li>Computer & Network Security</li>
+                                        </ul>
+                                    </ul>
+                                    <ul>
+                                        <li>Involvement: </li>
+                                        <ul>
+                                            <li>Varsity Rocket League (Captain)</li>
+                                            <li>ACM (Association for Computing Machinery)</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>The Ohio State University</b></h5>
+                                <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large blue"></i>2019 - 2020</p>
+                                <ul>
+                                    <li>Transfered to Marietta College due to Covid-19</li>
+                                    <li>Involvement:</li>
+                                    <ul>
+                                        <li>Mount Leadership Society Scholars</li>
+                                        <li>Summit Committee</li>
+                                        <li>Legacy Week Team Global</li>
+                                        <li>Various Service Projects</li>
+                                    </ul>
+                                </ul>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Marietta High School</b></h5>
+                                <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large blue"></i>2015 - 2019</p>
+                                <ul>
+                                    <li>Involvement:</li>
+                                    <ul>
+                                        <li>National Honor Society</li>
+                                        <li>Model United Nations</li>
+                                        <li>Freshman Class Secretary</li>
+                                        <li>Junior Class Vice President</li>
+                                        <li>Varsity Cross Country</li>
+                                        <li>Varsity Swim (Captain)</li>
+                                        <li>Varsity Crew (Captain)</li>
                                     </ul>
                                 </ul>
                             </div>
-                            <div class="w3-left">
+                            <hr>
+                        </div>
+                        <div id="Projects" class="tabcontent w3-container w3-card white grey-back">
+                            <h2 class="white w3-padding-16"><i class="fa fa-code fa-fw w3-margin-right w3-xxlarge blue"></i>Projects</h2>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Nationwide E-Commerce Claims API</b></h5>
+                                <p><i class="fa fa-code fa-fw w3-margin-right w3-large blue"></i>Language: Python</p>
+                                <p><i class="fa fa-desktop fa-fw w3-margin-right w3-large blue"></i>Technologies: AWS Lambda, AWS Rekognition</p>
                                 <ul>
-                                    <li>Registered Courses: </li>
-                                    <ul>
-                                        <li>Data Structure & Algorithm Analysis</li>
-                                        <li>Portable Software</li>
-                                        <li>Software Engineering</li>
-                                        <li>Computer & Network Security</li>
-                                    </ul>
+                                    <li>Team Submission for Nationwide Hackathon (Placed 3rd)</li>
+                                    <li>Allows user to input image along with information about a product</li>
+                                    <li>Gets labels and text from image and combines with claim data to create a Google shopping search</li>
+                                    <li>Returns the image, name, and price of possible replacement products as well as the estimated value of the claim</li>
                                 </ul>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Virtual Complex Instruction Set Computer</b></h5>
+                                <p><i class="fa fa-code fa-fw w3-margin-right w3-large blue"></i>Language: C</p>
                                 <ul>
-                                    <li>Involvement: </li>
-                                    <ul>
-                                        <li>Varsity Rocket League (Captain)</li>
-                                        <li>ACM (Association for Computing Machinery)</li>
-                                    </ul>
+                                    <li>Executes hexadecimal machine code programs</li>
+                                    <li>Capable of for/do/while loops, if/else/case statements, function calls & returns with reference/value parameters, dynamic data structures and algorithms</li>
                                 </ul>
+                                <hr>
+                            </div>
+                            <div class="w3-center w3-padding-16 navButton">
+                                <button class="tablinks blue-back grey" onclick="openTab(event, 'Projects2')">Next Page</button>
                             </div>
                         </div>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>The Ohio State University</b></h5>
-                            <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large blue"></i>2019 - 2020</p>
-                            <ul>
-                                <li>Transfered to Marietta College due to Covid-19</li>
-                                <li>Involvement:</li>
+                        <div id="Projects2" class="tabcontent w3-container w3-card white grey-back">
+                            <h2 class="white w3-padding-16"><i class="fa fa-code fa-fw w3-margin-right w3-xxlarge blue"></i>Projects</h2>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Gas Price Mobile Application</b></h5>
+                                <p><i class="fa fa-code fa-fw w3-margin-right w3-large blue"></i>Language: Dart, Flutter</p>
                                 <ul>
-                                    <li>Mount Leadership Society Scholars</li>
-                                    <li>Summit Committee</li>
-                                    <li>Legacy Week Team Global</li>
-                                    <li>Various Service Projects</li>
+                                    <li>Mobile application that displays current gas prices for each US state</li>
+                                    <li>Allows user to search for major cities in a state by using the two letter state codes</li>
                                 </ul>
-                            </ul>
-                            <hr>
+                                <hr>
+                            </div>
+                            <div class="w3-center w3-padding-16 navButton">
+                                <button class="tablinks blue-back grey" onclick="openTab(event, 'Projects')">Previous Page </button>
+                            </div>
                         </div>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Marietta High School</b></h5>
-                            <p><i class="fa fa-calendar fa-fw w3-margin-right w3-large blue"></i>2015 - 2019</p>                            
-                            <ul>
-                                <li>Involvement:</li>
-                                <ul>
-                                    <li>National Honor Society</li>
-                                    <li>Model United Nations</li>
-                                    <li>Freshman Class Secretary</li>
-                                    <li>Junior Class Vice President</li>
-                                    <li>Varsity Cross Country</li>
-                                    <li>Varsity Swim (Captain)</li>
-                                    <li>Varsity Crew (Captain)</li>
-                                </ul>
-                            </ul>
-                            <br>
+                        <div id="Awards" class="tabcontent w3-container w3-card white grey-back">
+                            <h2 class="white w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge blue"></i>Awards/Accomplishments</h2>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>3rd Place - Nationwide Hackathon</b></h5>
+                                <h5 class="w3-opacity"><b>Eagle Scout</b></h5>
+                                <h5 class="w3-opacity"><b>Marietta College - Spring 2022 - Dean's List</b></h5>
+                                <hr>
+                            </div>
                         </div>
+                        <!-- End Right Column -->
                     </div>
-                    <div id="Projects" class="tabcontent w3-container w3-card white grey-back">
-                        <h2 class="white w3-padding-16"><i class="fa fa-code fa-fw w3-margin-right w3-xxlarge blue"></i>Projects</h2>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Nationwide E-Commerce Claims API</b></h5>
-                            <p><i class="fa fa-code fa-fw w3-margin-right w3-large blue"></i>Language: Python</p>                            
-                            <p><i class="fa fa-desktop fa-fw w3-margin-right w3-large blue"></i>Technologies: AWS Lambda, AWS Rekognition</p>                                         
-                            <ul>
-                                <li>Team Submission for Nationwide Hackathon (Placed 3rd)</li>
-                                <li>Allows user to input image along with information about a product</li>
-                                <li>Gets labels and text from image and combines with claim data to create a Google shopping search</li>
-                                <li>Returns the image, name, and price of possible replacement products as well as the estimated value of the claim</li>                            
-                            </ul>
-                            <hr>
-                        </div>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Virtual Complex Instruction Set Computer</b></h5>
-                            <p><i class="fa fa-code fa-fw w3-margin-right w3-large blue"></i>Language: C</p>
-                            <ul>
-                                <li>Executes hexadecimal machine code programs</li>
-                                <li>Capable of for/do/while loops, if/else/case statements, function calls & returns with reference/value parameters, dynamic data structures and algorithms</li>
-                            </ul>
-                            <hr>
-                        </div>
-                        <div class="w3-center w3-padding-16 navButton">
-                            <button class="tablinks blue-back grey" onclick="openTab(event, 'Projects2')">Next Page</button>
-                        </div>
-                    </div>
-                    <div id="Projects2" class="tabcontent w3-container w3-card white grey-back">
-                        <h2 class="white w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge blue"></i>Projects</h2>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Gas Price Mobile Application</b></h5>
-                            <p><i class="fa fa-code fa-fw w3-margin-right w3-large blue"></i>Language: Dart, Flutter</p>                            
-                            <ul>
-                                <li>Mobile application that displays current gas prices for each US state</li>
-                                <li>Allows user to search for major cities in a state by using the two letter state codes</li>
-                            </ul>
-                            <hr>
-                        </div>
-                        <div class="w3-center w3-padding-16 navButton">
-                            <button class="tablinks blue-back grey" onclick="openTab(event, 'Projects')">Previous Page </button>
-                        </div>
-                    </div>
-                    <!-- End Right Column -->
+                    <!-- End Grid -->
                 </div>
-                <!-- End Grid -->
+                <!-- End Page Container -->
             </div>
-            <!-- End Page Container -->
+            <footer class="w3-container blue-back w3-center w3-margin-top">
+                <p>Find me on social media.</p>
+                <!--i class="fa fa-instagram w3-hover-opacity"></i>
+                    <i class="fa fa-snapchat w3-hover-opacity"></i-->
+                <a href="https://github.com/Auzzieo/"><i class="fa fa-github w3-hover-opacity"></i></a>
+                <a href="https://www.linkedin.com/in/austinoffenberger/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+                <br>
+                <div style="display: inline-block;">
+                    <p>Created by Austin Offenberger</p>
+                </div>
+                <div style="display:inline-block; position: relative; top: -6px;">
+                    <img class="w3-margin-top" src="favicon/favicon-32x32.png">
+                </div>
+            </footer>
         </div>
-        <footer class="w3-container blue-back w3-center w3-margin-top">
-            <p>Find me on social media.</p>
-            <!--i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i-->
-            <a href="https://www.linkedin.com/in/austinoffenberger/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-            <p>Created by Austin Offenberger</p>
-        </footer>
     </body>
-    <script>
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-    </script>
 </html>
